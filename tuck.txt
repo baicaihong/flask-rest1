@@ -1,3 +1,4 @@
+$$$$$$$$$$$$$$$$$$$
 1. 获取模型类的查询对象
    1) 通过session来获取BaseQuery对象
      query = db.session.query(User.id, User.name)
