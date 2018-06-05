@@ -147,3 +147,8 @@
 
 
        Õ‚¡¨Ω” db.session.query(Music.name,User.name,).outerjoin(User).all()
+
+
+
+
+1234567890
