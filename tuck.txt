@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 master
-=======
-ack
+
 >>>>>>> ack
 20.48
 20180607
@@ -10,155 +9,155 @@ ack
 =======
 $$$$$$$$$$$$$$$$$$$
 >>>>>>> 674c94a9085f8b5e95634c2e98a7f69fc3550782
-1. »ñÈ¡Ä£ÐÍÀàµÄ²éÑ¯¶ÔÏó
-   1) Í¨¹ýsessionÀ´»ñÈ¡BaseQuery¶ÔÏó
+1. ï¿½ï¿½È¡Ä£ï¿½ï¿½ï¿½ï¿½Ä²ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
+   1) Í¨ï¿½ï¿½sessionï¿½ï¿½ï¿½ï¿½È¡BaseQueryï¿½ï¿½ï¿½ï¿½
      query = db.session.query(User.id, User.name)
 
-     ¿ÉÒÔÔÚquery()·½·¨ÖÐÖ¸¶¨²éÑ¯µÄ×Ö¶ÎColumn,
-     Èç¹ûÖ¸¶¨ÊÇÊµÌåÀà£¬Ôò±íÊ¾Òª²éÑ¯ÀàÖÐµÄËùÓÐColumn×Ö¶Î£¬Èç£º
+     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½query()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ö¶ï¿½Column,
+     ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½Ê¾Òªï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½Columnï¿½Ö¶Î£ï¿½ï¿½ç£º
      query = db.session.query(User)
 
-   2) Í¨¹ýÊµÌåÀà»ñÈ¡BaseQuery¶ÔÏó
+   2) Í¨ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½È¡BaseQueryï¿½ï¿½ï¿½ï¿½
    query2 = User.query
-   ²éÑ¯ËùÓÐÊµÌåÀàµÄ×Ö¶Î
+   ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½
 
 
-2. ²éÑ¯¹ýÂËÌõ¼þ
-  1) filter(Column Ìõ¼þ Ìõ¼þÖµ£¬)
-     Ìõ¼þ£º  ==  »ò Column.__eq__()
-            !=  »ò Column.__ne__()
-            >   »ò Column.__gt__()
-            <   »ò Column.__lt__()
-            >=  »ò Column.__ge__()
-            <=  »ò Column.__le__()
+2. ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  1) filter(Column ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½)
+     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ==  ï¿½ï¿½ Column.__eq__()
+            !=  ï¿½ï¿½ Column.__ne__()
+            >   ï¿½ï¿½ Column.__gt__()
+            <   ï¿½ï¿½ Column.__lt__()
+            >=  ï¿½ï¿½ Column.__ge__()
+            <=  ï¿½ï¿½ Column.__le__()
 
-            like Ä£ºý²éÑ¯ Column.like('%i%')
-            in ²éÑ¯ Column.in_((1,2))
+            like Ä£ï¿½ï¿½ï¿½ï¿½Ñ¯ Column.like('%i%')
+            in ï¿½ï¿½Ñ¯ Column.in_((1,2))
 
-            ×Ö·û´®Ïà¹Ø²éÑ¯Ìõ¼þ
-            ÆðÊ¼×Ö·û  Column.startswith('')
-            ½áÊø×Ö·û  Column.endswith('')
-            °üº¬×Ö·û  Column.contains('')
+            ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ø²ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½
+            ï¿½ï¿½Ê¼ï¿½Ö·ï¿½  Column.startswith('')
+            ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½  Column.endswith('')
+            ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½  Column.contains('')
 
-  2) ¾ÛºÏ²éÑ¯
-     Ê¹ÓÃ db.func ¶ÔÏó ½øÐÐ¾ÛºÏ²éÑ¯
+  2) ï¿½ÛºÏ²ï¿½Ñ¯
+     Ê¹ï¿½ï¿½ db.func ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ð¾ÛºÏ²ï¿½Ñ¯
        1. count(Column)
-                Column¿ÉÒÔÊÇÈÎÒâÒ»ÁÐ '*',
-                µ«ÊÇquery²éÑ¯ÖÐ±ØÐë Ö¸¶¨ÁÐ(User »ò User.name)
+                Columnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ '*',
+                ï¿½ï¿½ï¿½ï¿½queryï¿½ï¿½Ñ¯ï¿½Ð±ï¿½ï¿½ï¿½ Ö¸ï¿½ï¿½ï¿½ï¿½(User ï¿½ï¿½ User.name)
 
-               Èç£ºdb.session.query(User.name,db.func.count('*')).all()
+               ï¿½ç£ºdb.session.query(User.name,db.func.count('*')).all()
 
 
-       2. max(Column)  ×î´ó
-       3. min(Column)  ×îÐ¡
-       4. sum(Column)  ÇóºÍ
-       5. avg(Column)  Æ½¾ù
+       2. max(Column)  ï¿½ï¿½ï¿½
+       3. min(Column)  ï¿½ï¿½Ð¡
+       4. sum(Column)  ï¿½ï¿½ï¿½
+       5. avg(Column)  Æ½ï¿½ï¿½
 
-     Ê¹ÓÃ¾ÛºÏº¯ÊýÊ±£¬Óë·Ö×éÒ»¿éÊ¹ÓÃ BaseQuery.group_by(Column)
-     Èç£º
+     Ê¹ï¿½Ã¾ÛºÏºï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê¹ï¿½ï¿½ BaseQuery.group_by(Column)
+     ï¿½ç£º
         db.session
           .query(User.name, db.func.count('*'))
           .group_by(User.name)
           .all()
 
-       ¶Ô ¾ÛºÏº¯Êý²éÑ¯µÄÁÐ£¬¿ÉÒÔÊ¹ÓÃlabel()Îª´ËÁÐÉèÖÃ±ðÃû
+       ï¿½ï¿½ ï¿½ÛºÏºï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½label()Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½
        db.session
           .query(User.name, db.func.count('*').label('cnt'))
 
-       Õë¶ÔÒÔÏÂµÄquery()²éÑ¯µÄ×Ö¶Î£¬sqlalchemyµÄormÓ³Éä³ÉsqlÈçÏÂ£º
+       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½query()ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ö¶Î£ï¿½sqlalchemyï¿½ï¿½ormÓ³ï¿½ï¿½ï¿½sqlï¿½ï¿½ï¿½Â£ï¿½
        select user.name, count(*) as cnt
        from user;
 
-       Èç¹ûÊý¾Ý¿âÊÇmysql£¬ ÐèÒª×¢Òâ£º
-       ÔÚ²éÑ¯×Ö¶ÎÖÐÃ»ÓÐÊ¹ÓÃ¾ÛºÏº¯ÊýµÄÁÐ£¬Òª³öÏÖÔÚgroup byÓï¾äÖÐ
+       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½mysqlï¿½ï¿½ ï¿½ï¿½Òª×¢ï¿½â£º
+       ï¿½Ú²ï¿½Ñ¯ï¿½Ö¶ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ê¹ï¿½Ã¾ÛºÏºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½group byï¿½ï¿½ï¿½ï¿½ï¿½
        select user.name, count(*) as cnt
        from user group by user.name;
 
-  3) BaseQuery.filter_by(ÊôÐÔÃû=ÊôÐÔÖµ,)
-     Ö»ÄÜÍê³ÉµÈÖµ²éÑ¯
+  3) BaseQuery.filter_by(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½=ï¿½ï¿½ï¿½ï¿½Öµ,)
+     Ö»ï¿½ï¿½ï¿½ï¿½Éµï¿½Öµï¿½ï¿½Ñ¯
      q.filter_by(name='Disen').all()
      q.filter_by(name='Disen',id=1).all()
 
-  4) BaseQuery.get(ident) Ö÷¼üid²éÑ¯£¬·µ»ØÊµÌåÀà¶ÔÏó
-     ×¢£º Èç¹ûid²»´æÔÚ£¬ÔòÅ×³öÒì³£
+  4) BaseQuery.get(ident) ï¿½ï¿½ï¿½ï¿½idï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     ×¢ï¿½ï¿½ ï¿½ï¿½ï¿½idï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½ì³£
 
 
-3. ÅÅÐò¡¢·ÖÒ³
-  1) ÅÅÐò BaseQuery.order_by(Column) Ä¬ÈÏÉýÐò
-     Èç1£º q.order_by(User.phone).all()
+3. ï¿½ï¿½ï¿½ò¡¢·ï¿½Ò³
+  1) ï¿½ï¿½ï¿½ï¿½ BaseQuery.order_by(Column) Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     ï¿½ï¿½1ï¿½ï¿½ q.order_by(User.phone).all()
 
-     ½µÐò Column.desc(),Èç£º
+     ï¿½ï¿½ï¿½ï¿½ Column.desc(),ï¿½ç£º
      q.order_by(User.phone.desc()).all()
 
-  2) ·ÖÒ³
-    ´ÓBaseQuery.paginate() »ñÈ¡ Pagination ·ÖÒ³Æ÷
+  2) ï¿½ï¿½Ò³
+    ï¿½ï¿½BaseQuery.paginate() ï¿½ï¿½È¡ Pagination ï¿½ï¿½Ò³ï¿½ï¿½
     paginate(page=1, per_page=10)
-        page  µ±Ç°Ò³Âë
-        per_page Ã¿Ò³ÏÔÊ¾µÄ¼ÇÂ¼Êý
+        page  ï¿½ï¿½Ç°Ò³ï¿½ï¿½
+        per_page Ã¿Ò³ï¿½ï¿½Ê¾ï¿½Ä¼ï¿½Â¼ï¿½ï¿½
 
-    PaginationÀà¶ÔÏóµÄÊôÐÔ£º
-        items£º listÀàÐÍ£¬µ±Ç°Ò³µÄÊý¾Ý
-        has_prev: ÊÇ·ñÓÐÉÏÒ»Ò³
-        has_next: ÊÇ·ñÓÐÏÂÒ»Ò³
-        next_num : ÏÂÒ»Ò³µÄÒ³Âë
-        prev_num:  ÉÏÒ»Ò³µÄÒ³Âë
-        pages :  ×ÜÒ³Êý
-        total : ×Ü¼ÇÂ¼Êý
-        page:   µ±Ç°Ò³Âë
-        per_page: Ã¿Ò³ÏÔÊ¾µÄ¼ÇÂ¼Êý
+    Paginationï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½
+        itemsï¿½ï¿½ listï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Ç°Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        has_prev: ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³
+        has_next: ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³
+        next_num : ï¿½ï¿½Ò»Ò³ï¿½ï¿½Ò³ï¿½ï¿½
+        prev_num:  ï¿½ï¿½Ò»Ò³ï¿½ï¿½Ò³ï¿½ï¿½
+        pages :  ï¿½ï¿½Ò³ï¿½ï¿½
+        total : ï¿½Ü¼ï¿½Â¼ï¿½ï¿½
+        page:   ï¿½ï¿½Ç°Ò³ï¿½ï¿½
+        per_page: Ã¿Ò³ï¿½ï¿½Ê¾ï¿½Ä¼ï¿½Â¼ï¿½ï¿½
 
 
-4. ¹ØÁª²Ù×÷
-   1) ¶¨ÒåÁ½¸öÄ£ÐÍÀàµÄ¹ØÏµ
-   db.ForeignKey('Íâ±íÃû.Ö÷¼üÃû')  ÔÚ¶à¶ËÉùÃ÷Íâ¼ü
+4. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+   1) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½Ïµ
+   db.ForeignKey('ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½')  ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-   db.relationship('¹ØÁªÀàÃû', backref=)  ÔÚ¶à¶ËÉùÃ÷¹ØÁªÀàµÄÊôÐÔ
-   Í¨¹ýbackref ÔÚ¹ØÁªÀàÖÐ£¬ÉùÃ÷Ò»¸öÊôÐÔ£¬¿ÉÒÔ¹ØÁª²éÑ¯¶à¶ËµÄ¶ÔÏó¼¯ºÏ
-   db.backref('¶îÍâÊôÐÔÃû', lazy=True)
-      lazy ÎªTrue, ±íÊ¾¶îÍâµÄÊôÐÔÔÚ±»µ÷ÓÃÊ±£¬²Å¹ØÁª²éÑ¯
-           ÎªFalse£¬ÔÚ²éÑ¯Ò»¶ËÀàµÄÊ±£¬Ò²»á¹ØÁª²éÑ¯
+   db.relationship('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', backref=)  ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+   Í¨ï¿½ï¿½backref ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ËµÄ¶ï¿½ï¿½ó¼¯ºï¿½
+   db.backref('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', lazy=True)
+      lazy ÎªTrue, ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Å¹ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯
+           ÎªFalseï¿½ï¿½ï¿½Ú²ï¿½Ñ¯Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯
 
-   2£©¹ØÁªÌí¼ÓÊý¾Ý
-     ÔÚÒ»¶Ë £º
-        ÏÈ²éÑ¯Ò»¶ËµÄ¶ÔÏó£º
+   2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     ï¿½ï¿½Ò»ï¿½ï¿½ ï¿½ï¿½
+        ï¿½È²ï¿½Ñ¯Ò»ï¿½ËµÄ¶ï¿½ï¿½ï¿½
         u = User.query.get(1)
 
-        Í¨¹ýbackrefÉú³ÉµÄ¼¯ºÏÊôÐÔ£¬append()Ìí¼Ó¶à¶ËµÄ¶ÔÏó
-        m1 = Music(name='´óº£',singer='ÕÅÓêÉú',brand='¾­µä',mp3_url='')
+        Í¨ï¿½ï¿½backrefï¿½ï¿½ï¿½ÉµÄ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½append()ï¿½ï¿½Ó¶ï¿½ËµÄ¶ï¿½ï¿½ï¿½
+        m1 = Music(name='ï¿½ï¿½',singer='ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',brand='ï¿½ï¿½ï¿½ï¿½',mp3_url='')
         u.musics.append(m1)
 
-        ±£´æÒ»¶Ë¶ÔÏó
+        ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ë¶ï¿½ï¿½ï¿½
         db.session.add(u)
         db.session.commit()
 
-     ÔÚ¶à¶Ë
-         m2 = Music(name='Ð¡ÐÇÐÇ',singer='cici',brand='¾­µä',mp3_url='')
+     ï¿½Ú¶ï¿½ï¿½
+         m2 = Music(name='Ð¡ï¿½ï¿½ï¿½ï¿½',singer='cici',brand='ï¿½ï¿½ï¿½ï¿½',mp3_url='')
          m2.user_id = 3
-         »ò m2.user = User.query.get(3)
+         ï¿½ï¿½ m2.user = User.query.get(3)
 
          db.session.add(m2)
          db.session.commit()
 
-   3£© ¹ØÁª²éÑ¯
-       ÄÚÁ¬½Ó db.session.query(User.name,Music.name).join(Music).all()
+   3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯
+       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ db.session.query(User.name,Music.name).join(Music).all()
 
    4)User.query.filter(User.musics.any()).all()
 
 
-  5).Í³¼Æ²éÑ¯½á¹û
+  5).Í³ï¿½Æ²ï¿½Ñ¯ï¿½ï¿½ï¿½
 	User.query.count()
 	db.sesssion.query(User).count()
 
 	BaseQuery.first()
 	db.session.refresh(obj)
 
- 6)¶à¶Ô¶àµÄ¹ØÁª¹ØÏµ
-	Ê¹ÓÃÍâ¼ü db.ForeignKey
+ 6)ï¿½ï¿½Ô¶ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½Ïµ
+	Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ db.ForeignKey
 
 
 
 
-       ÍâÁ¬½Ó db.session.query(Music.name,User.name,).outerjoin(User).all()
+       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ db.session.query(Music.name,User.name,).outerjoin(User).all()
 
 
 
