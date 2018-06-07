@@ -1,4 +1,9 @@
+20180607
+<<<<<<< HEAD
 ************************************************************
+=======
+$$$$$$$$$$$$$$$$$$$
+>>>>>>> 674c94a9085f8b5e95634c2e98a7f69fc3550782
 1. 获取模型类的查询对象
    1) 通过session来获取BaseQuery对象
      query = db.session.query(User.id, User.name)
@@ -153,3 +158,6 @@
 
 
 1234567890
+
+
+bvjsnvjdmvfdjsklvkdsvlsdvmdfvl --fenzhi
